@@ -1,0 +1,44 @@
+.container {
+  width: 600px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+#todo-form {
+  width: 40%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#todo-form > input,
+#todo-form > select {
+  padding: 5px 10px;
+}
+
+table,
+td,
+th {
+  border: 1px solid;
+}
+
+td {
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.deleteTask {
+  color: red;
+}
