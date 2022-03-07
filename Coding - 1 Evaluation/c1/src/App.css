@@ -1,0 +1,15 @@
+.container {
+  width: 700px;
+  margin: 50px auto;
+  border: 1px solid red;
+}
+
+.items {
+  width: 40%;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+  text-align: left;
+}
