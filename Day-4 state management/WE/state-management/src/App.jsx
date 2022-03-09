@@ -1,5 +1,8 @@
 import "./App.css";
 import { useState } from "react";
+import { Left } from "./components/Left";
+import { Right } from "./components/Right";
+
 function App() {
   const [counter, setCounter] = useState(0);
 
@@ -12,24 +15,6 @@ function App() {
       <Left fn={getData} />
       <Right data={counter} />
       <Todo />
-    </>
-  );
-}
-
-function Left({ fn }) {
-  const data = 40;
-  fn(data);
-  return (
-    <>
-      <h1>Left data {data}</h1>
-    </>
-  );
-}
-
-function Right({ data }) {
-  return (
-    <>
-      <h1>Right data {data}</h1>
     </>
   );
 }

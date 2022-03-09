@@ -1,0 +1,79 @@
+.container {
+  width: 100vw;
+  text-align: center;
+  margin: auto;
+}
+.grocery-container {
+  width: 100%;
+}
+.grocery-list {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+}
+.grocery-list-item {
+  max-width: 60%;
+  overflow: hidden;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.grocery-list-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.grocery-input-container {
+  margin: auto;
+  width: 40%;
+  padding: 10px 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 30px;
+}
+
+.grocery-input-container > h1 {
+  margin: 0 10px 10px 0;
+  padding: 0;
+}
+
+.grocery-input-container > input {
+  padding: 2px 10px;
+  border-radius: 10px;
+  width: 140px;
+}
+
+.addBtnStyle,
+.paginationBtnStyle {
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  background-color: green;
+  padding: 2px 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.addBtnStyle:hover,
+.paginationBtnStyle:hover {
+  color: green;
+  background-color: white;
+}
+
+.removeBtnStyle {
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  padding: 2px 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.removeBtnStyle:hover {
+  color: red;
+  background-color: white;
+}
