@@ -33,7 +33,6 @@ function Parent() {
         sendDataToParent={getDataFromChild1}
         sendDataToChild2={transferDataFromChild1ToChild2}
       />
-
       <Child2 dataFromChild1={dataForChild2} />
     </>
   );

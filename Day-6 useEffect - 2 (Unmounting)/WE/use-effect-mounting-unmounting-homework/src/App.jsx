@@ -26,7 +26,7 @@ function App() {
         }
         return prev - 1;
       });
-    }, 500);
+    }, 1000);
     return () => {
       setTime(0);
     };
