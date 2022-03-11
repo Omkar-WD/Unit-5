@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-function Forms() {
+function Forms({ handleAllEmployeeData }) {
   const [isMarried, setIsMarried] = useState(false);
   const [employeeFormData, setEmployeeFormData] = useState({
     name: "",
@@ -16,32 +16,13 @@ function Forms() {
     axios
       .get("http://localhost:3001/employees", employeeFormData)
       .then((res) => {
-        let data = res.data[0];
-        console.log("initial value", data);
-        setEmployeeFormData({
-          name: data.name,
-          age: data.age,
-          address: data.address,
-          department: data.department,
-          salary: data.salary,
-          maritalStatus: data.maritalStatus,
-        });
-        // setIsMarried(data.maritalStatus);
-        setIsMarried(true);
+        let data = res.data;
+        handleAllEmployeeData(data);
       });
   }, []);
 
-  useEffect(() => {
-    console.log("is married", isMarried);
-  }, [isMarried]);
-
-  useEffect(() => {
-    console.log("Employee Form Data", employeeFormData);
-  }, [employeeFormData]);
-
   const handleChange = (e) => {
     const { id, value } = e.target;
-    console.log("value ", value);
     if (id == "maritalStatus") {
       setIsMarried(!isMarried);
     }
@@ -64,9 +45,7 @@ function Forms() {
       salary: "",
       maritalStatus: "",
     });
-    // setIsMarried(true);
   };
-  console.log("isMarried", isMarried);
 
   return (
     <form className="form-container" onSubmit={handleSubmit}>

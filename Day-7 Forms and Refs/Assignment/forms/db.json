@@ -8,6 +8,24 @@
       "salary": "90000",
       "maritalStatus": "on",
       "id": 2
+    },
+    {
+      "name": "omkar",
+      "age": "25",
+      "address": "9/A Jai Bhavani nagar Paud Road Kothrud Pune - 411038",
+      "department": "Computer",
+      "salary": "90000",
+      "maritalStatus": "",
+      "id": 3
+    },
+    {
+      "name": "dgfsdfghdfbgg  bgb",
+      "age": "25",
+      "address": "9/A Jai Bhavani nagar Paud Road Kothrud Pune - 411038",
+      "department": "Civil",
+      "salary": "2000000",
+      "maritalStatus": "on",
+      "id": 4
     }
   ]
 }
