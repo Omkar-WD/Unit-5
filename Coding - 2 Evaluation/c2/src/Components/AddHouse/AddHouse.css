@@ -1,0 +1,8 @@
+.addHouseContainer {
+  text-align: center;
+}
+
+.addHouseContainer > form table {
+  margin: auto;
+  text-align: left;
+}

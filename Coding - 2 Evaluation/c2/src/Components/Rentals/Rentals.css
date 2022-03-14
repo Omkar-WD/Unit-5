@@ -1,0 +1,26 @@
+.rentalContainer {
+  text-align: center;
+}
+
+.sortingButtons button,
+.rentalContainer input {
+  margin: 10px;
+}
+
+.rentalContainer table {
+  margin: auto;
+}
+
+.rentalContainer tr,
+.rentalContainer td,
+.rentalContainer th {
+  padding: 10px;
+}
+
+.houseImage {
+  width: 100px;
+}
+
+.houseImage > img {
+  width: 100%;
+}
