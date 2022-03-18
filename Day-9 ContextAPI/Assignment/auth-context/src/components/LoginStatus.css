@@ -1,0 +1,22 @@
+.login-status-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.login-status-container * {
+  margin: 20px;
+}
+
+.login {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(14, 209, 14);
+}
+
+.logout {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+}
