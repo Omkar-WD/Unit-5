@@ -1,11 +1,20 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { AuthContext } from "../contexts/AuthContext";
 import axios from "axios";
 
 function Button() {
   const { isAuth, toggleAuth } = useContext(AuthContext);
   const [token, setToken] = useState("");
-  const handleLogin = () => (isAuth ? loginRequest() : "");
+
+  useEffect(() => {
+    if (isAuth) {
+      return () => {
+        setToken("");
+      };
+    } else {
+      loginRequest();
+    }
+  }, [isAuth]);
 
   const loginRequest = () => {
     axios
@@ -15,14 +24,12 @@ function Button() {
       })
       .then((res) => {
         setToken(res.data.token);
-        // console.log(res.data);
       });
   };
 
   return (
     <button
       onClick={() => {
-        handleLogin();
         toggleAuth(!isAuth, token);
       }}
     >
