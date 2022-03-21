@@ -10,14 +10,14 @@ export const Navbar = () => {
         <button className="history">
           <Link to={"/section/history"}>history</Link>
         </button>
-        <button className="Mystery">
-          <Link to={"/section/Mystery"}>Mystery</Link>
+        <button className="mystery">
+          <Link to={"/section/mystery"}>mystery</Link>
         </button>
-        <button className="Technology">
-          <Link to={"/section/Technology"}>Technology</Link>
+        <button className="technology">
+          <Link to={"/section/technology"}>technology</Link>
         </button>
-        <button className="Mythology">
-          <Link to={"/section/Mythology"}>Mythology</Link>
+        <button className="mythology">
+          <Link to={"/section/mythology"}>mythology</Link>
         </button>
       </div>
     </>
