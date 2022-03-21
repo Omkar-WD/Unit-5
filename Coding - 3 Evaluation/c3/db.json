@@ -1,0 +1,136 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Maudie",
+      "imageUrl": "http://dummyimage.com/114x100.png/dddddd/000000",
+      "description": "Toxic effect of venom of gila monster, undetermined, init",
+      "reviews": ["Periph nerve transposit"],
+      "author": "Maudie Thorns",
+      "price": 407,
+      "section": "Mystery",
+      "isbnNumber": "03573"
+    },
+    {
+      "id": 2,
+      "title": "Ruggiero",
+      "imageUrl": "http://dummyimage.com/115x100.png/5fa2dd/ffffff",
+      "description": "Driver of pk-up/van injured in clsn w ped/anml nontraf, init",
+      "reviews": ["Ant nasal pack for epist"],
+      "author": "Ruggiero Cressy",
+      "price": 4730,
+      "section": "Mystery",
+      "isbnNumber": "46"
+    },
+    {
+      "id": 3,
+      "title": "Delilah",
+      "imageUrl": "http://dummyimage.com/103x100.png/5fa2dd/ffffff",
+      "description": "Nondisp seg fx shaft of r femr, 7thM",
+      "reviews": ["Vaginal construction"],
+      "author": "Delilah Iglesia",
+      "price": 2206,
+      "section": "Mystery",
+      "isbnNumber": "1"
+    },
+    {
+      "id": 4,
+      "title": "Perrine",
+      "imageUrl": "http://dummyimage.com/176x100.png/cc0000/ffffff",
+      "description": "Refractory anemia with excess of blasts [RAEB]",
+      "reviews": ["Lap abltn liver les/tiss"],
+      "author": "Perrine Guinness",
+      "price": 3409,
+      "section": "Technology",
+      "isbnNumber": "7344"
+    },
+    {
+      "id": 5,
+      "title": "Mathew",
+      "imageUrl": "http://dummyimage.com/213x100.png/dddddd/000000",
+      "description": "Corros 3rd deg mu sites of unsp lower limb, ex ank/ft, subs",
+      "reviews": ["Arterial pressure monit"],
+      "author": "Mathew Larwell",
+      "price": 4503,
+      "section": "Technology",
+      "isbnNumber": "46299"
+    },
+    {
+      "id": 6,
+      "title": "Mace",
+      "imageUrl": "http://dummyimage.com/170x100.png/dddddd/000000",
+      "description": "Poisoning by cannabis (derivatives), undetermined, sequela",
+      "reviews": ["Oth laryngeal operation"],
+      "author": "Mace Surman-Wells",
+      "price": 2427,
+      "section": "Technology",
+      "isbnNumber": "81"
+    },
+    {
+      "id": 7,
+      "title": "Hyacintha",
+      "imageUrl": "http://dummyimage.com/186x100.png/ff4444/ffffff",
+      "description": "Nondisplaced comminuted fracture of shaft of unsp fibula",
+      "reviews": ["Intravascul imaging NEC"],
+      "author": "Hyacintha Pettican",
+      "price": 1921,
+      "section": "Mythology",
+      "isbnNumber": "8930"
+    },
+    {
+      "id": 8,
+      "title": "Creight",
+      "imageUrl": "http://dummyimage.com/172x100.png/dddddd/000000",
+      "description": "Burn of third degree of right wrist",
+      "reviews": ["Op red-tibia/fib epiphys"],
+      "author": "Creight Akred",
+      "price": 4375,
+      "section": "Mythology",
+      "isbnNumber": "42499"
+    },
+    {
+      "id": 9,
+      "title": "Jamaal",
+      "imageUrl": "http://dummyimage.com/235x100.png/5fa2dd/ffffff",
+      "description": "Other psoriatic arthropathy",
+      "reviews": ["Gastric freezing"],
+      "author": "Jamaal Andor",
+      "price": 2201,
+      "section": "Mythology",
+      "isbnNumber": "2"
+    },
+    {
+      "id": 10,
+      "title": "Rosalia",
+      "imageUrl": "http://dummyimage.com/183x100.png/5fa2dd/ffffff",
+      "description": "Non-prs chronic ulcer of right thigh w fat layer exposed",
+      "reviews": ["Lysis of hand adhesions"],
+      "author": "Rosalia Whitebread",
+      "price": 352,
+      "section": "history",
+      "isbnNumber": "928"
+    },
+    {
+      "id": 11,
+      "title": "Jania",
+      "imageUrl": "http://dummyimage.com/112x100.png/cc0000/ffffff",
+      "description": "Unstable burst fracture of T9-T10 vertebra, sequela",
+      "reviews": ["Cardioplegia"],
+      "author": "Jania Gierke",
+      "price": 2368,
+      "section": "history",
+      "isbnNumber": "67034"
+    },
+    {
+      "id": 12,
+      "title": "Cathrine",
+      "imageUrl": "http://dummyimage.com/145x100.png/ff4444/ffffff",
+      "description": "Papyraceous fetus, second trimester, fetus 1",
+      "reviews": ["D & C NEC"],
+      "author": "Cathrine Nannini",
+      "price": 4844,
+      "section": "history",
+      "isbnNumber": "99"
+    }
+  ]
+}
