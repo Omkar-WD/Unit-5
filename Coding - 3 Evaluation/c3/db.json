@@ -2,8 +2,8 @@
   "books": [
     {
       "id": 1,
-      "title": "Maudie",
-      "imageUrl": "http://dummyimage.com/114x100.png/dddddd/000000",
+      "title": "In the Mind of Revenge",
+      "imageUrl": "https://i.pinimg.com/236x/85/78/26/857826c68a9ce0aacdb38ece25e0d8e1--award-winning-books-in-the-mind.jpg",
       "description": "Toxic effect of venom of gila monster, undetermined, init",
       "reviews": ["Periph nerve transposit"],
       "author": "Maudie Thorns",
@@ -13,8 +13,8 @@
     },
     {
       "id": 2,
-      "title": "Ruggiero",
-      "imageUrl": "http://dummyimage.com/115x100.png/5fa2dd/ffffff",
+      "title": "The Ghost of Galaxy",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEa81mi-Rau7qMHMQN03HccL2vY2fSzJj3Je3Lbs_5dLAKdNWfiYs6apNO_7jWu89Lw8Y&usqp=CAU",
       "description": "Driver of pk-up/van injured in clsn w ped/anml nontraf, init",
       "reviews": ["Ant nasal pack for epist"],
       "author": "Ruggiero Cressy",
@@ -24,8 +24,8 @@
     },
     {
       "id": 3,
-      "title": "Delilah",
-      "imageUrl": "http://dummyimage.com/103x100.png/5fa2dd/ffffff",
+      "title": "Jack Knifed",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSlSN3ZWkftDxU-EXZSTh0hymmAnpx7yq0ePV-yS7WJ9vuX3kEMQDQeOHIOP1rih6Z7SA&usqp=CAU",
       "description": "Nondisp seg fx shaft of r femr, 7thM",
       "reviews": ["Vaginal construction"],
       "author": "Delilah Iglesia",
@@ -36,7 +36,7 @@
     {
       "id": 4,
       "title": "Perrine",
-      "imageUrl": "http://dummyimage.com/176x100.png/cc0000/ffffff",
+      "imageUrl": "https://i.pinimg.com/236x/82/fa/8e/82fa8e7e0d27751db22e0c6aaa55b3eb--computer-science-book-covers.jpg",
       "description": "Refractory anemia with excess of blasts [RAEB]",
       "reviews": ["Lap abltn liver les/tiss"],
       "author": "Perrine Guinness",
@@ -47,7 +47,7 @@
     {
       "id": 5,
       "title": "Mathew",
-      "imageUrl": "http://dummyimage.com/213x100.png/dddddd/000000",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMIBD3dspU80WE4SAluGXr7nrnPY9_J14IpMGUU0f0AWg4l0zBAuQt80TPWXXtSa6u-E0&usqp=CAU",
       "description": "Corros 3rd deg mu sites of unsp lower limb, ex ank/ft, subs",
       "reviews": ["Arterial pressure monit"],
       "author": "Mathew Larwell",
@@ -58,7 +58,7 @@
     {
       "id": 6,
       "title": "Mace",
-      "imageUrl": "http://dummyimage.com/170x100.png/dddddd/000000",
+      "imageUrl": "https://media.wiley.com/product_data/coverImage300/46/11194567/1119456746.jpg",
       "description": "Poisoning by cannabis (derivatives), undetermined, sequela",
       "reviews": ["Oth laryngeal operation"],
       "author": "Mace Surman-Wells",
@@ -69,7 +69,7 @@
     {
       "id": 7,
       "title": "Hyacintha",
-      "imageUrl": "http://dummyimage.com/186x100.png/ff4444/ffffff",
+      "imageUrl": "https://i.pinimg.com/originals/fd/71/4b/fd714bdd53a2d473849e27075322e158.jpg",
       "description": "Nondisplaced comminuted fracture of shaft of unsp fibula",
       "reviews": ["Intravascul imaging NEC"],
       "author": "Hyacintha Pettican",
@@ -80,7 +80,7 @@
     {
       "id": 8,
       "title": "Creight",
-      "imageUrl": "http://dummyimage.com/172x100.png/dddddd/000000",
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1305000423l/23522.jpg",
       "description": "Burn of third degree of right wrist",
       "reviews": ["Op red-tibia/fib epiphys"],
       "author": "Creight Akred",
@@ -91,7 +91,7 @@
     {
       "id": 9,
       "title": "Jamaal",
-      "imageUrl": "http://dummyimage.com/235x100.png/5fa2dd/ffffff",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/31/Norse_Mythology_by_Neil_Gaiman_-_original_hardcover.jpg",
       "description": "Other psoriatic arthropathy",
       "reviews": ["Gastric freezing"],
       "author": "Jamaal Andor",
@@ -102,7 +102,7 @@
     {
       "id": 10,
       "title": "Rosalia",
-      "imageUrl": "http://dummyimage.com/183x100.png/5fa2dd/ffffff",
+      "imageUrl": "https://images-platform.99static.com//fju0F_42vCnKx7hIKOAdCIXLzoY=/fit-in/500x500/99designs-contests-attachments/57/57130/attachment_57130456",
       "description": "Non-prs chronic ulcer of right thigh w fat layer exposed",
       "reviews": ["Lysis of hand adhesions"],
       "author": "Rosalia Whitebread",
@@ -113,7 +113,7 @@
     {
       "id": 11,
       "title": "Jania",
-      "imageUrl": "http://dummyimage.com/112x100.png/cc0000/ffffff",
+      "imageUrl": "https://images-platform.99static.com//cYdaNisB7bwTTPWKV7uynDuOMXU=/0x0:960x960/fit-in/500x500/99designs-contests-attachments/83/83389/attachment_83389017",
       "description": "Unstable burst fracture of T9-T10 vertebra, sequela",
       "reviews": ["Cardioplegia"],
       "author": "Jania Gierke",
@@ -124,7 +124,7 @@
     {
       "id": 12,
       "title": "Cathrine",
-      "imageUrl": "http://dummyimage.com/145x100.png/ff4444/ffffff",
+      "imageUrl": "https://c8.alamy.com/comp/BAGHTM/old-history-book-by-smith-muzzey-lloyd-BAGHTM.jpg",
       "description": "Papyraceous fetus, second trimester, fetus 1",
       "reviews": ["D & C NEC"],
       "author": "Cathrine Nannini",

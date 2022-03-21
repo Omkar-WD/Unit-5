@@ -16,10 +16,8 @@ export const AllRoutes = () => {
           path="/bookdetailspage/:id"
           element={<BookDetailsPage />}
         />
-        <Route exact path="/Section" element={<Section />} />
+        <Route exact path="/section/:name" element={<Section />} />
         <Route path="*" element={<NotFound />} />
-        {/* Create other routes here: Section, bookdetailspage and 404 */}
-        {/*  */}
       </Routes>
     </>
   );

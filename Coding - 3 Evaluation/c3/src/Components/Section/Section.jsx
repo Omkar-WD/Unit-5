@@ -6,25 +6,71 @@ import { SortAndFilterButtons } from "../SortAndFilterButtons/SortAndFilterButto
 import styled from "styled-components";
 
 export const Section = () => {
-  // you will receive section name from URL here.
-  // Get books for only this section and show
-  //   Everything else is same as Home page
+  const [allBooks, setAllBooks] = useState([]);
+
+  const { name } = useParams();
+
+  const handleSort = (val) => {
+    let demo;
+    if (val == 1) {
+      demo = allBooks.sort((a, b) => {
+        if (a.title > b.title) return 1;
+        return -1;
+      });
+    } else if (val == 2) {
+      demo = allBooks.sort((a, b) => {
+        if (a.title < b.title) return 1;
+        return -1;
+      });
+    } else if (val == 3) {
+      demo = allBooks.sort((a, b) => {
+        if (a.price > b.price) return 1;
+        return -1;
+      });
+    } else {
+      demo = allBooks.sort((a, b) => {
+        if (a.price < b.price) return 1;
+        return -1;
+      });
+    }
+    setAllBooks([...demo]);
+  };
+
+  useEffect(() => {
+    axios.get("http://localhost:8080/books").then((res) => {
+      let data = res.data;
+      data = data.filter((e) => {
+        if (e.section == name) return e;
+      });
+      setAllBooks(data);
+    });
+  }, [name]);
 
   const Main = styled.div`
-    /* Same as Homepage */
+    /* Apply some responsive styling to children */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 30px;
+    padding: 40px;
   `;
-
   return (
     <>
-      <h2 style={{ textAlign: "center" }}>
-        {
-          //   Show section name here
-        }
-      </h2>
-      <SortAndFilterButtons handleSort={"give sorting function to component"} />
+      <h2 style={{ textAlign: "center" }}>{name}</h2>
+
+      <SortAndFilterButtons handleSort={handleSort} />
 
       <Main className="sectionContainer">
-        {/* SHow same BookCard component here, just like homepage but with books only belong to this Section */}
+        {allBooks.map((book) => (
+          <BookCard
+            key={book.id}
+            id={book.id}
+            imageUrl={book.imageUrl}
+            title={book.title}
+            price={book.price}
+          />
+        ))}
       </Main>
     </>
   );

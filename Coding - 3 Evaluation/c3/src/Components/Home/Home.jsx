@@ -6,31 +6,56 @@ import axios from "axios";
 
 export const Home = () => {
   const [allBooks, setAllBooks] = useState([]);
+
   useEffect(() => {
     axios.get("http://localhost:8080/books").then((res) => {
       setAllBooks(res.data);
     });
   }, []);
+
   const Main = styled.div`
     /* Apply some responsive styling to children */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 30px;
+    padding: 40px;
   `;
+
+  const handleSort = (val) => {
+    let demo;
+    if (val == 1) {
+      demo = allBooks.sort((a, b) => {
+        if (a.title > b.title) return 1;
+        return -1;
+      });
+    } else if (val == 2) {
+      demo = allBooks.sort((a, b) => {
+        if (a.title < b.title) return 1;
+        return -1;
+      });
+    } else if (val == 3) {
+      demo = allBooks.sort((a, b) => {
+        if (a.price > b.price) return 1;
+        return -1;
+      });
+    } else {
+      demo = allBooks.sort((a, b) => {
+        if (a.price < b.price) return 1;
+        return -1;
+      });
+    }
+    setAllBooks([...demo]);
+  };
 
   return (
     <div className="homeContainer">
       <h2 style={{ textAlign: "center" }}>Home</h2>
-      <SortAndFilterButtons
-        handleSort={
-          "give handleSort function to this component, that sorts books"
-        }
-      />
+
+      <SortAndFilterButtons handleSort={handleSort} />
 
       <Main className="mainContainer">
-        {/* 
-            Iterate over books that you get from network
-            populate a <BookCard /> component
-            pass down books id, imageUrl, title, price and anything else that you want to 
-            show in books Card.
-        */}
         {allBooks.map((book) => (
           <BookCard
             key={book.id}
