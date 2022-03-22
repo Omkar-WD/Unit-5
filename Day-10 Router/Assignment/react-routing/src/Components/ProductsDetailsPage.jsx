@@ -26,7 +26,9 @@ export const ProductsDetailsPage = () => {
             textAlign: "left",
           }}
         >
-          <img src={""} alt="" />
+          <div className="productImage">
+            <img src={product.image} alt="product image" />
+          </div>
           <div className="productDetails" style={{ padding: "20px" }}>
             <div>
               <h2 className="productName">{product.name}</h2>
@@ -37,9 +39,6 @@ export const ProductsDetailsPage = () => {
             <div style={{ width: "700px", paddingLeft: "30px" }}>
               <h5 className="productDesc">Description :</h5>
               <p>{product.description}</p>
-              <div className="productImage">
-                <img src={product.image} alt="product image" />
-              </div>
             </div>
           </div>
         </div>
