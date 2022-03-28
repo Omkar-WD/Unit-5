@@ -6,7 +6,7 @@ import axios from "axios";
 function Todos() {
   const [text, setText] = useState("");
 
-  const todos = useSelector((store) => store.todo.todo);
+  const { todo, loading } = useSelector((store) => store.todo);
   const dispatch = useDispatch();
 
   const getData = () => {
@@ -31,23 +31,29 @@ function Todos() {
     });
   };
   return (
-    <div>
-      Todos
-      <input type="text" onChange={(e) => setText(e.target.value)} />
-      <button
-        onClick={() => {
-          addTodos();
-        }}
-      >
-        ADD Todo
-      </button>
-      {todos.map((e, i) => (
-        <div key={i}>
-          {e.title}
-          <button onClick={() => handleDelete(e.id)}>Delete Todo</button>
-        </div>
-      ))}
-    </div>
+    <>
+      {loading ? (
+        "loading....."
+      ) : (
+        <>
+          <h1>Todos</h1>
+          <input type="text" onChange={(e) => setText(e.target.value)} />
+          <button
+            onClick={() => {
+              addTodos();
+            }}
+          >
+            ADD Todo
+          </button>
+          {todo.map((e, i) => (
+            <div key={i}>
+              {e.title}
+              <button onClick={() => handleDelete(e.id)}>Delete Todo</button>
+            </div>
+          ))}
+        </>
+      )}
+    </>
   );
 }
 

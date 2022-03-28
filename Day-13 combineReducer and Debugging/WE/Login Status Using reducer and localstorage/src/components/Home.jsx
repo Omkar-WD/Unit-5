@@ -6,7 +6,6 @@ function Home() {
   const [isLogin, setIsLogin] = useState(x == "true" ? true : false);
   console.log(isLogin, typeof isLogin);
   if (!isLogin) return <Navigate to={"/login"} />;
-
   return (
     <div>
       <h1>Home</h1>

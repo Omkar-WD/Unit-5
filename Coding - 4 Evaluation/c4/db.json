@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "name": "omkar",
+      "password": "1234",
+      "location": "mumbai",
+      "interests": [
+        "technology",
+        "movies"
+      ],
+      "image": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "subscribed": [],
+      "id": 1
+    }
+  ],
+  "meetups": []
+}
