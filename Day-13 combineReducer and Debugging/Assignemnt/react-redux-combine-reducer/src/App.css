@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-self: center;
+}
+.todo-input-container {
+}
+
+.todo-list-container table {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  width: 90vw;
+}
+
+tr,
+td {
+  padding: 10px;
+}

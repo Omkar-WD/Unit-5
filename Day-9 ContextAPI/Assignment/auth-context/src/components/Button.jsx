@@ -10,6 +10,7 @@ function Button() {
     if (isAuth) {
       return () => {
         setToken("");
+        console.log("Remove Token");
       };
     } else {
       loginRequest();
