@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
+import { userLogin } from "../../Redux/Login/action";
 
 export const LoginSignUp = () => {
   const [signupData, setSignupData] = useState({
@@ -8,10 +9,9 @@ export const LoginSignUp = () => {
     password: "",
     location: "",
     interests: [],
-    image: "",
+    image: "https://images.unsplash.com/photo",
     subscribed: [], //these have to be ids of the subscribed meetups
   });
-
   const [loginData, setLoginData] = useState({
     name: "",
     password: "",
@@ -28,8 +28,8 @@ export const LoginSignUp = () => {
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
-    let arr;
     axios.get("http://localhost:8080/users").then(({ data }) => {
+      let arr;
       arr = data;
       let flag = false;
       arr = arr.filter((user, i) => {
@@ -43,8 +43,8 @@ export const LoginSignUp = () => {
       });
       if (flag == true) {
         console.log("login-User", arr);
-        localStorage.setItem("userLoginDetails", JSON.stringify(arr));
-        dispatch(arr);
+        dispatch(userLogin(arr[0]));
+        localStorage.setItem("userLoginDetails", JSON.stringify(arr[0]));
       } else {
         alert("Check name or password");
       }

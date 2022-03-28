@@ -13,7 +13,7 @@ export const Routers = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/loginsignup" element={<LoginSignUp />} />
-        <Route path="/meetup" element={<Event />} />
+        <Route path="/meetup/:id" element={<Event />} />
         <Route path="/addmeetup" element={<AddMeetup />} />
         <Route path="*" element={<NotFound />} />
         {/* Create other routes here: loginsignup, meetup, addmeetup and 404 */}
